@@ -18,4 +18,8 @@ public class TestCalc {
     public void div() {
         assertEquals(1,Calc.div(2,2));
     }
+    @Test(expected=ArithmeticException.class)
+    public void div0() {
+        assertEquals(1,Calc.div(2,0));
+    }    
 }
